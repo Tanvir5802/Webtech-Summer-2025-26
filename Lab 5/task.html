@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Product Cart</title>
+    <script src="cart.js"></script>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Product Cart</legend>
+
+        <form>
+            <table>
+
+                <tr>
+                    <td>Product Name:</td>
+                    <td>
+                        <input type="text" id="productName" value="MACBOOK AIR M2" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Product Price:</td>
+                    <td>
+                        <input type="text" id="productPrice" value="150000" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Product Quantity:</td>
+                    <td>
+                        <input type="number" id="productQuantity" onkeyup="calculate()">
+                        <span id="errorQuantity"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Payable:</td>
+                    <td>
+                        <input type="text" id="payable" readonly>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="button" id="button">
+                            Add To Cart
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </fieldset>
+
+</body>
+</html>
