@@ -1,0 +1,80 @@
+body{
+    background-color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+fieldset{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+}
+
+legend{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#registrationTable{
+    margin: auto;
+}
+
+#registrationTable td{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.labelCol{
+    width: 180px;
+    font-weight: bold;
+}
+
+.inputCol{
+    width: 380px;
+}
+
+.errorCol{
+    width: 320px;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    font-size: 16px;
+}
+
+select{
+    width: 356px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.required{
+    color: red;
+}
+
+.errorText{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+input[type="submit"]{
+    width: 150px;
+    cursor: pointer;
+}
+
+#studentTable{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+#studentTable th{
+    background-color: lightblue;
+    height: 40px;
+}
+
+#studentTable td{
+    height: 35px;
+}

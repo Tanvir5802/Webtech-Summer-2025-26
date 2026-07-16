@@ -1,0 +1,172 @@
+<html>
+
+<head>
+
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <fieldset>
+
+        <legend>Student Registration</legend>
+
+        <form onsubmit="return collectData();">
+
+            <table id="registrationTable">
+
+                <tr>
+
+                    <td class="labelCol">
+                        First Name <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+                        <input type="text" id="firstName">
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="firstNameError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="labelCol">
+                        Last Name <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+                        <input type="text" id="lastName">
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="lastNameError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="labelCol">
+                        Student ID <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+                        <input type="text" id="studentId">
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="studentIdError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="labelCol">
+                        Email <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+                        <input type="text" id="email">
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="emailError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="labelCol">
+                        Credit Completed <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+                        <input type="number" id="credit">
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="creditError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="labelCol">
+                        Department <span class="required">*</span>
+                    </td>
+
+                    <td class="inputCol">
+
+                        <select id="department">
+
+                            <option value="">Select Department</option>
+                            <option value="CSE">CSE</option>
+                            <option value="CS">CS</option>
+                            <option value="SE">SE</option>
+                            <option value="EEE">EEE</option>
+                            <option value="BBA">BBA</option>
+
+                        </select>
+
+                    </td>
+
+                    <td class="errorCol">
+                        <span id="departmentError" class="errorText"></span>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td></td>
+
+                    <td align="center">
+                        <input type="submit" value="Submit">
+                    </td>
+
+                    <td></td>
+
+                </tr>
+
+            </table>
+
+        </form>
+
+    </fieldset>
+
+    <br><br>
+
+    <fieldset>
+
+        <legend>Registered Student List</legend>
+
+        <table id="studentTable" border="1">
+
+            <tr>
+
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Student ID</th>
+                <th>Email</th>
+                <th>Credit</th>
+                <th>Department</th>
+
+            </tr>
+
+        </table>
+
+    </fieldset>
+
+</body>
+
+</html>
